@@ -1,18 +1,19 @@
 import math
 
 class Point:
-	def move(self, x, y, z):
+	def __init__(self, x=1, y=1):
+		self.move(x, y)
+
+	def move(self, x, y):
 		self.x = x
 		self.y = y
-		self.z = z
 		
 	def reset(self):
-		self.move(0, 0, 0)
+		self.move(0, 0)
 	def calculate_distance(self, other_point):
 		return math.sqrt(
 				(self.x - other_point.x)**2 +
-				(self.y - other_point.y)**2 +
-				(self.z - other_point.z)**2)
+				(self.y - other_point.y)**2 )
 
 	
 #p1 = Point()
