@@ -1,3 +1,2 @@
 # python_tutorial
-Object oriented python tutorial
-Github/python training material
+Object oriented python tutorial and Github/python training material.
